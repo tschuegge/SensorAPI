@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "type": "shell",
+  "presentation": {
+    "focus": true
+  },
+  "tasks": [
+    {
+      "label": "Check PHPUnit",
+      "command": "/Applications/MAMP/bin/php/php7.1.0/bin/php",
+      "args": [
+        "./bin/phpunit-5.7.5.phar",
+        "--version"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Unit Tests",
+      "command": "/Applications/MAMP/bin/php/php7.1.0/bin/php",
+      "args": [
+        "./bin/phpunit-5.7.5.phar",
+        "tests"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Install dependencies (composer)",
+      "command": "/Applications/MAMP/bin/php/php7.1.0/bin/php",
+      "args": [
+        "./bin/composer.phar",
+        "install"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy",
+      "command": [
+        "./deploy.sh"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

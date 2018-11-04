@@ -1,0 +1,4 @@
+config/localhost.settings.php
+config/sensorapi.juergdanuser.ch.settings.php
+vendor
+deploy.sh
