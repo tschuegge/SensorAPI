@@ -7,7 +7,7 @@ Datenmodell
 -----------
 
 ### User
-```json
+```js
 {
     "id": 0,         // ID als Integer
     "name": "",      // Username als String
@@ -16,7 +16,7 @@ Datenmodell
 ```
 
 ### Sensor
-```json
+```js
 {
     "id": 0,         // ID als Integer (wird bei POST überschrieben)
     "name": "",      // Name des Sensors als String
@@ -25,7 +25,7 @@ Datenmodell
 ```
 
 ### SensorData
-```json
+```js
 {
     "id": 0,         // ID als Integer (wird bei POST überschrieben)
     "data": 0,       // Sensordaten als Integer
@@ -135,7 +135,7 @@ Die Debug-Konfiguration ***Listen vor XDebug*** kann gestartet werden, dann kann
 
 
 ### Veröffentlichen
-Die Sensor API wird auf https://sensorapi.juergdanuser.ch betrieben. Falls jemand eine eigene Instanz betreiben möchte, bitte folgende Schritte vornehmen:
+Um eine eigene Instanz der SensorAPI bitte folgende Schritte vornehmen:
 1. Datenbank mit dem Schema aus *dbschema.sql* auf dem Server erstellen
 2. Settings im Ordner `config` anhand von `example.settings.php` erstellen
 3. *deploy.sh* anhand des Beispiels *deploy.example.sh* erstellen
