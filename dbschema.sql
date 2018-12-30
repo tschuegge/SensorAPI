@@ -17,7 +17,7 @@ CREATE TABLE `sensors` (
 
 CREATE TABLE `sensordata` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `data` int(11) NOT NULL,
+  `data` decimal(16,8) NOT NULL,
   `timestamp` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `sensorid` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`),

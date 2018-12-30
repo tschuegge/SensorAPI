@@ -39,7 +39,7 @@ class SensorDataRepository
         }
         $sensorDataObj = new SensorData();
         $sensorDataObj->id = (int)$sensorData['id'];
-        $sensorDataObj->data = (int)$sensorData['data'];
+        $sensorDataObj->data = round($sensorData['data'], 9);
         $sensorDataObj->timestamp = $sensorData['timestamp'];
         $sensorDataObj->sensorid = (int)$sensorData['sensorid'];
         return $sensorDataObj;
