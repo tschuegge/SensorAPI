@@ -28,7 +28,7 @@ Datenmodell
 ```js
 {
     "id": 0,         // ID als Integer (wird bei POST überschrieben)
-    "data": 0,       // Sensordaten als Dezimalzahl (max 18 Stellen vor dem Komma und 9 Stellen nach dem Komma)
+    "data": 0,       // Sensordaten als Dezimalzahl (max. 18 Stellen vor dem Komma und 9 Stellen danach)
     "timestamp": "", // Datum als String im ISO8601-Format (z.B. 2018-01-31 20:00:00)
     "sensorid": 0    // ID des Sensors als Integer
 }
